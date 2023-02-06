@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/estilo_menu.css">
+    <title>Menu Principal</title>
+    
+    
+    
+</head>
+<body>
+    
+    
+        <div class="slides">
+            
+            <nav class="menu">
+                <img src="./img/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                      <li><a href="#">Eventos</a>
+                        <ul>
+                           <p>
+                            <li><a href="#">Envetos Solidario</a>
+                                <li><a href="#">Sorteio Nona Encantos</a>
+                           </p> 
+                        </ul>
+                    </li>
+                    <li><a href="#">Resultados</a>
+                        <ul class="submenu">
+                            <li><a href="curso_kimbundo.html">Antes e depois Gentle Magic</a>
+                            <li><a href="curso_kicongo.html">Antes e depois Evaline</a>
+                            <li><a href="curso_kwayama.html">Antes e depois Portia M</a>
+                               
+                             
+                        </ul>
+                    </li>
+                    <li><a onclick="encomdas()">Encomendar</a></li>
+                    
+                </ul>
+                
+            </nav>
+
+        <div class="slide">
+            <img src="./img/anucio1.jpg" alt="Anucio 1" class="selecionado">
+        
+       
+            <img src="./img/anucio5.jpg" alt="Anucio 2" >
+        
+            <img src="./img/anucio3.jpg" alt="Anucio 3" >
+       
+            <img src="./img/anucio4.jpg" alt="Anucio 4" >
+
+            <input type="radio" name="btn1" id="btn1">
+            <input type="radio" name="btn1" id="btn2">
+            <input type="radio" name="btn1" id="btn3">
+            <input type="radio" name="btn1" id="btn4">
+
+        </div>
+
+        </div>
+        <div class="espaco-card">
+            <div class="card">
+                <img src="./img/card1.jpeg" alt="card1">
+                <h2 class="card-titulo">Gentle Magic</h2>
+                <p class="card-text">Gentle Magic, não apenas no nome, mas de facto a sua ação é uma magia suave, isto pelos resultados que a mesma linha de produtos garantem, como: redução da oleosidade, restauração da pele, eliminado a pele morta, reduz marcas, esfolia o rosto e garante um brilho sem igual à sua pele. </p>
+          <div class="sabe1">
+            <a href="" class="saber1">Saber Mais</a>
+          </div>
+                
+            </div>
+            <div class="card">
+                <img src="./img/card2.jpeg" alt="card1">
+                <h2 class="card-titulo1">Portia M</h2>
+                <p class="card-text">Portia m, um produto indispensável para sua jornada de skin care, pois é composta por extratos de alguns produtos naturais, como : Marula e Romã, que funcionam para todo tipo de pele e contém 20% de proteção contra os raios solares. Combate às estrias ( celulites), uniformização do tom de pele e muito mais. </p>
+           <div class="sabe2">
+            <a href="" class="saber2">Saber Mais</a>
+           </div>
+                
+            </div>
+            <div class="card">
+                <img src="./img/card3.jpeg" alt="card1">
+                <h2 class="card-titulo3">Eveline</h2>
+                <p class="card-text">Eveline Cosmetics, este é um clareador de alta qualidade, pois não queima a sua pele, apenas retifica os pontos negros, clareando-os. Contribuindo para uma pele cada vez mais saudável, sem manchas , espinhos e linhas de expressão. É ainda uma marca que oferece uma variedade enorme de produtos de excelente qualidade.</p>
+            <div class="sabe3">
+                <a href="" class="saber3">Saber Mais</a>
+            </div>   
+            </div>
+        </div>
+
+        <div class="video-area">
+            <div class="video1">
+                <video autoplay loop muted plays-inline class="vid1"><source src="./videos/anucio1.mp4" type="video/mp4"></video>
+            </div>
+            <div class="video2">
+                <video autoplay loop muted plays-inline class="vid2"><source src="./videos/anucio2.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+        <div class="falando-nona">
+            <h1>Já sabes da Novidade?</h1>
+            <p>A nona Encantos trousse para todos os seus clientes que fizerem as suas encomendas pelo site desconto de até 60% e ainda mas você frequentando no nosso site irás receber as novidades em primeira mão já pensaste o quantos podes ganhar ou comprar o produto no preço mas acessivel do mercado, lembrando que após fazer a compra dos nossos produto pela primeira vez você terás aula de um dos membro da nona encantos de modo a uma boa utilização do produto para obter um resultado mas eficiente.</p>
+        </div>
+        <div class="formulario" id="formulario">
+            <img src="./img/inf.png" alt="Informação">
+             <p>Fazer um bom preechimento para o produto chegar exatamente onde diz</p>
+            <form  method="post">
+                <label for="nome">Nome Cliente</label>
+                <input type="text" name="nome" id="nome" placeholder="Exemplo: Pedro">
+                <label for="wa">Whatsapp</label>
+                <input type="tel" name="wa" id="wa" placeholder="Exemplo: 932799745">
+                <label for="pr">Produto</label>
+                <input type="text" name="nome" id="pr" placeholder="Exemplo: Portia M">
+                <label for="en">Endereço</label>
+                <input type="text" name="nome" id="en" placeholder="Exemplo: Kilamba apartamento U19">
+<button>Realizar a Encomenda</button>
+<button id="sai" onclick="sai()">Sai</button>
+            </form>
+        </div>
+        <div class="rodape">
+            <h1>Sobre Nós</h1>
+            <p>Somos uma empresa online que entrega para si diversos produtos cosmeticos de qualidade com o objetivo de mostrar o verdadeiro brilho que há em ti, à mesma empresa existe desde 2020  </p>
+        <div class="botao-r">
+           <a href="https://www.facebook.com/profile.php?id=100087458363013"><img src="./img/facebook.png" alt="facebook"><span>Facebook</span></a> 
+           <a href="https://api.whatsapp.com/send/?phone=244997463783&text=Voc%C3%AA%20acedeu%20pelo%20site%20do%20Nona%20Encantos%20seja%20bem-vindo%20e%20diga-nos%20em%20que%20podemos%20ajudar"><img src="./img/whatsapp.png" alt="facebook"><span>Whatsapp</span></a> 
+           <a href="https://www.instagram.com/nona_encantos_oficial/"><img src="./img/instagram.png" alt="facebook"><span>Instagram</span></a> 
+        </div>
+        <div class="baixo">
+            <h1>Suporte Tecnico</h1>
+            <div class="aria">
+                <p class="tc">932799745</p>
+                <p class="tc caso">paulocarvalho16443@outlook.pt</p>
+
+            </div>
+            <h1>Parceria</h1>
+            <div class="aria">
+                <p>Kamba Softsolution</p>
+                     
+            </div>
+            <h1>Contacto</h1>
+            <div class="aria">
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Whatsapp</p>
+                
+            </div>
+        </div>
+        
+        </div>
+ 
+
+    <script defer src="./js/codigo.js">
+       
+
+    </script>
+</body>
+</html>
