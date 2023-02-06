@@ -1,0 +1,565 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins', 'sans-serif';
+box-sizing: border-box;
+}
+body{
+    display: flex;
+ align-items: center;
+justify-content: center;
+}
+.slides{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+    
+}
+.slide img{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 1s;
+
+
+}
+.slide .selecionado{
+    opacity: 1;
+}
+
+.slide input{
+position: relative;
+display: inline-block;
+left: 50%;
+top: 700px;
+font-size: 18pt;
+background-color: aquamarine;
+border-color: rgb(226, 197, 32);
+
+
+}
+.menu{
+    position: fixed;
+	width:100%;
+	height:50px;
+	background-color: rgba(34, 34, 34, 0.774);
+    z-index: 1;
+	
+	}
+
+	
+.menu>ul{
+	list-style:none;	
+	position:relative;
+	
+    z-index: 1;
+    
+	margin-left: 40%;
+    top: -114%;
+	}
+.menu ul li{
+		width:150px;
+		float:left;
+	}
+
+.menu a{
+	padding:12px;
+	display:block;
+	text-decoration: none;
+	background-color: transparent;
+	text-align:center;
+    color: #fff;
+	cursor: pointer;
+	}
+.menu ul ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+	
+	}
+.menu ul li:hover ul{
+	visibility:visible;
+    z-index: 1;
+	}
+	
+.menu a:hover{
+	background-color:#33323269; 
+    
+	color: #ffbb00;
+	
+	}
+
+.menu ul ul li{
+	
+	float:none;
+	
+	}
+    .logo{
+        width: 50px;
+    }
+.menu ul ul li a{
+    
+    width: 200px;
+	background-color:rgba(0, 0, 0, 0.514);
+    
+	}
+    
+
+
+
+
+		
+.menu>ul{
+	width: 10%;
+	
+	display: flex;
+	left: 0;
+	}
+
+.menu ul li{
+	width:100%;
+	float:none;
+	}
+
+.menu ul li:hover ul{
+	height:auto;
+	max-height:200px;
+	transition:all .4s;
+	}
+	
+
+.espaco-card{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    top: 100%;
+    display: flex;
+}
+.card img{
+
+  width:   300px;
+  height: 230px;
+  
+}
+.card{
+    position: relative;
+  width:   300px;
+  height: 460px; 
+  margin: 8%;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow:0px 0px 10px rgb(0, 0, 0,0.7) ;
+  left: 5%;
+ 
+  border-radius: 15px;
+}
+.card-titulo{
+    text-align: center;
+    color: #05af22;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 23pt;
+}
+.card-titulo1{
+	text-align: center;
+    color: #daa208;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 23pt;
+}
+.card-titulo3{
+	text-align: center;
+    color: #6b086e;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 23pt;
+	
+}
+.card-text{
+    color: #2b2727;
+    font-family: 'Segoe UI';
+    font-size: 13px;
+	text-align: justify;
+    width: 299px;
+	height: 140px;
+}
+.sabe1{
+	
+	background-color: #05af22;
+	padding: 15px;
+	text-align: center;
+	font-weight: 1000; 
+}
+.saber1{
+	text-decoration: none;
+	color: #fff;
+	font-size: 15pt;
+	font-weight: 400;
+	font-family:   sans-serif;
+}
+.sabe2{
+	
+	background-color: #daa208;
+	padding: 15px;
+	text-align: center;
+}
+.saber2{
+	text-decoration: none;
+	color: #fff;
+	font-size: 15pt;
+	font-weight: 400;
+	font-family:   sans-serif;
+}
+.sabe3{
+	
+	background-color: #6b086e;
+	padding: 15px;
+	text-align: center;
+}
+.saber3{
+	text-decoration: none;
+	color: #fff;
+	font-size: 15pt;
+	font-weight: 400;
+	font-family:   sans-serif;
+}
+.video-area{
+	width: 100%;
+	height: 700;
+	background-color: #000000;
+	position: absolute;
+	top: 2000px;
+}
+.video1{
+	position: relative;
+    width: 40%;
+	height: 460px;
+	border-radius: 15px;
+	background-color: #daa208;
+	top: 10px;
+	margin: 5%;
+	
+}
+.vid1{
+	width: 100%;
+	height: 460px;	
+	object-fit: cover;
+	border-radius: 15px;
+}
+.video2{
+	position: relative;
+    width: 40%;
+	height: 460px;
+	border-radius: 15px;
+	background-color: #daa208;
+	top: 10px;
+	margin: 5%;
+	left: 50%;
+	
+	
+}
+.vid2{
+	width: 100%;
+	height: 460px;	
+	object-fit: cover;
+	border-radius: 15px;
+}
+.falando-nona{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	top: 3204px;
+}
+.falando-nona h1{
+	text-align: center;
+	font-size: 27pt;
+	color: #3b3b3b;
+	margin: 2%;
+	font-weight: 800;
+}
+.falando-nona p{
+	margin: auto;
+	width: 50%;
+	text-align: justify;
+	color: #777676;
+	font-size: 19pt;
+}
+.formulario{
+	position: absolute;
+	width: 40%;
+	height: 70%;
+	background: #fff;
+	border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 10px 40px rgba(43, 44, 43, 0.74);
+visibility: hidden;
+
+}
+.formulariov{
+	visibility: visible;
+}
+
+.formulario form{
+	width: 100%;
+	height: 100%;
+}
+.formulario label{
+	position: relative;
+	top: 40%;
+	left: 25%;
+}
+.formulario button{
+	position: relative;
+	top: 50%;
+	left: 35%;
+	border-radius: 20px;
+	padding: 10px  25px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	display: block;
+	margin: 2%;
+	background-color: #000000;
+
+}
+#sai{
+	position: relative;
+	background-color: rgb(168, 41, 41);
+	left: 43%;
+
+}
+.formulario button:hover{
+	color: #ffbb00;
+}
+.formulario input{
+	position: relative;
+	display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+outline: 0;
+width: 50%;
+top: 40%;
+left: 25%;
+border: none;
+border-bottom: solid 2px #ffbb00;
+
+
+}
+.formulario img{
+	position: absolute;
+	width: 100px;
+	top: 0;
+}
+.formulario p{
+	position: absolute;
+	width: 70%;
+	top: 100px;
+	
+}
+.rodape{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	top: 4000px;
+
+}
+.rodape h1{
+	text-align: center;
+	color: #413c3c;
+}
+.rodape p{
+	position: relative;
+	width: 50%;
+	color: #ffffff;
+	text-align: center;
+	left: 23%;
+}
+.botao-r{
+	position: absolute;
+	display: flex;
+	left: 40%;
+	top: 15%;
+}
+.baixo{
+	width: 100%;
+	display: flex;
+	top: 30%;
+	
+}
+.baixo h1{
+	
+	position: relative;
+	left: 15%;
+	top: 250px;
+}
+.botao-r a{
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	
+}
+.botao-r span{
+	position: relative;
+	top: 50px;
+	right: 50%;
+}
+.botao-r a:hover{
+	color: #ffbb00;
+}
+.aria{
+	width: 17%;
+	position: relative;
+	left:3%;
+	top: 350px;	
+	text-align: left;
+}
+.aria .tc{
+	position: relative;
+	left: -25px;
+	text-align: justify;
+	
+}
+
+
+@media  (max-width: 800px){
+    .espaco-card{
+        display: block;
+
+    }
+	.slide img{
+		position: absolute;
+		width: 100%;
+		height: 80%;
+		object-fit: cover;
+		
+		transition: 1s;
+	
+	
+	}
+	.video-area{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		top: 2500px;
+	}
+	.video1{
+		
+	width: 80%;
+	height:460px;	
+	}
+	.vid1{
+		
+		width: 100%;
+	height:460px;
+	}
+	.video2{
+		position: relative;
+		width: 80%;
+		height:400px;	
+		left: 0;
+		}
+		.vid2{
+			width: 100%;
+	        height:400px;
+		}
+		.falando-nona{
+			position: absolute;
+			top: 3600px;
+		}
+		.menu ul{
+			position: relative;
+			width: 30%;
+			font-size: 12px;
+			margin-left: 15%;
+			
+		}
+		.formulario{
+			width: 90%;
+			height: 80%;
+		}
+		.formulario button{
+			
+            position: relative;
+            left: 20%;
+			display: block;
+
+		}
+		.formulario label{
+			position: relative;
+			top: 40%;
+			left: 25%;
+			
+		}
+		.rodape{
+			position: absolute;
+			background: #000000;
+			top: 6000px;
+		height: 110%;
+		}
+		.botao-r{
+			position: absolute;
+			
+			left: 10%;
+			top: 45%;
+
+		}
+		.botao-r a{
+			padding: 15px;
+		}
+		.botao-r span{
+			position: relative;
+			right: 15%;
+			top: 60px;
+		}
+		.botao-r img{
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			
+			
+		}
+		.baixo h1{
+			position: relative;
+			font-size: 16px;
+			left: 5%;
+			margin-top: 17%;
+		}
+		.baixo .tc{
+			position: relative;
+			left: -90%;
+			font-size: 12px;
+		}
+		.baixo .caso{
+			visibility: hidden;
+		}
+		.aria p{
+			position: relative;
+			left: -95%;
+			font-size: 12px;
+		}
+		
+
+	
+}
+
+
+
+
+
+
+
+
